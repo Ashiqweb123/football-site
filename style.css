@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -------------------------------CSS Banner---------------------------------------- */
+
+.banner {
+    display: flex;
+    background-color: blue;
+}
+
+.text-info .textOne {
+    margin: 40px 50px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    padding: 20px;
+    line-height: 2px;
+    width: 485px;
+}
+
+.button,
+a {
+    width: 150px;
+    height: 25px;
+    background-color: #E02C6D;
+    color: white;
+    margin: 6px 8px;
+    text-decoration: none;
+    padding: 11px 7px;
+}
+
+.half-width {
+    width: 50%;
+    margin: 5%;
+}
+
+.banner-img img {
+    width: 100%;
+    margin: 10px;
+}
+
+
+/* -------------------------------CSS Banner---------------------------------------- */
