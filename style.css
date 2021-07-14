@@ -4,33 +4,73 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 1000px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
 
 /* -------------------------------CSS Banner---------------------------------------- */
 
 .banner {
     display: flex;
-    background-color: blue;
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+}
+
+.text-info {
+    margin-left: 131px;
 }
 
 .text-info .textOne {
-    margin: 40px 50px;
-    font-size: 30px;
+    margin-left: 127px;
+    font-size: 64px;
     font-weight: 900;
     color: white;
     padding: 20px;
-    line-height: 2px;
+    line-height: 125%;
     width: 485px;
+    height: 230px;
+    transition: font-size 2s;
 }
 
-.button,
-a {
-    width: 150px;
-    height: 25px;
+.text-info .textOne:hover {
+    font-size: 70px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
     background-color: #E02C6D;
-    color: white;
-    margin: 6px 8px;
+    width: 168px;
+    height: 40px;
+    padding: 10px 24px;
+    margin-left: 80px;
+    transition: width 2s linear, transform 4s;
+}
+
+.button:hover {
+    width: 200px;
+    transform: rotate(360deg);
+}
+
+.watch a {
     text-decoration: none;
-    padding: 11px 7px;
+    color: white;
+}
+
+.icon {
+    color: white;
+    padding-left: 10px;
 }
 
 .half-width {
@@ -40,8 +80,114 @@ a {
 
 .banner-img img {
     width: 100%;
-    margin: 10px;
+    margin: 10px
 }
 
 
 /* -------------------------------CSS Banner---------------------------------------- */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 27px;
+    /* height: 474px; */
+}
+
+.player {
+    /* width: 330px;
+    height: 474px; */
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player .img-thumbnail img {
+    width: 100%;
+    height: 256px;
+}
+
+.playerName {
+    font-weight: 700;
+    font-size: 28px;
+    width: 300px;
+    color: #18191F;
+}
+
+.player-dec p {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.bottom {
+    position: relative;
+    width: 100%;
+    /* height: 213px; */
+    margin: 0 auto;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    padding: 0 14px;
+}
+
+.social-icon .fab {
+    margin: 0 14px;
+    background-color: gray;
+    border-radius: 40%;
+    padding: 5px 10px;
+}
+
+.logo img {
+    width: 483px;
+    margin: 0 auto;
+}
+
+.copy h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.iframe-content {
+    width: 100%;
+    height: 500px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.score {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 5%;
+}
+
+.score th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3DBAFD;
+    color: white;
+}
+
+.score td {
+    color: white;
+}
+
+.score th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
