@@ -12,7 +12,6 @@ main {
 
 .container {
     background-color: #FFFFFF;
-    width: 1000px;
     padding: 20px;
     margin-top: 20px;
 }
@@ -36,7 +35,7 @@ main {
     font-size: 64px;
     font-weight: 900;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
     line-height: 125%;
     width: 485px;
     height: 230px;
@@ -54,7 +53,7 @@ main {
     width: 168px;
     height: 40px;
     padding: 10px 24px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     transition: width 2s linear, transform 4s;
 }
 
@@ -86,17 +85,17 @@ main {
 
 /* -------------------------------CSS Banner---------------------------------------- */
 
+
+/*-------------------------- playercss----------------------------- */
+
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 60px;
     grid-row-gap: 27px;
-    /* height: 474px; */
 }
 
 .player {
-    /* width: 330px;
-    height: 474px; */
     width: 100%;
     padding: 20px;
     background: #FFFFFF;
@@ -120,53 +119,11 @@ main {
     color: #6C6C6C;
 }
 
-.bottom {
-    position: relative;
-    width: 100%;
-    /* height: 213px; */
-    margin: 0 auto;
-}
 
-.social-icon {
-    display: flex;
-    justify-content: center;
-    padding: 0 14px;
-}
+/*-------------------------- playercss----------------------------- */
 
-.social-icon .fab {
-    margin: 0 14px;
-    background-color: gray;
-    border-radius: 40%;
-    padding: 5px 10px;
-}
 
-.logo img {
-    width: 483px;
-    margin: 0 auto;
-}
-
-.copy h3 {
-    font-size: 18px;
-    text-align: center;
-}
-
-.iframe-content {
-    width: 100%;
-    height: 500px;
-}
-
-.video {
-    width: 100%;
-    height: 100%;
-}
-
-.table {
-    background-image: url(./images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    opacity: 0.7;
-}
+/*----------------------- score-css --------------------------------*/
 
 .score {
     border-collapse: collapse;
@@ -190,4 +147,108 @@ main {
 td {
     border: 1px solid #ddd;
     padding: 8px;
+}
+
+
+/*----------------------- score-css --------------------------------*/
+
+
+/* -----------------------------------video-css---------------------------------- */
+
+.iframe-content {
+    width: 100%;
+    height: 500px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
+/* -----------------------------------video-css---------------------------------- */
+
+
+/* --------------------------bottom-footer------------------ */
+
+.bottom {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    padding: 0 14px;
+}
+
+.social-icon .fab {
+    margin: 0 14px;
+    background-color: gray;
+    border-radius: 40%;
+    padding: 5px 10px;
+}
+
+.logo {
+    width: 483px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.copy h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* --------------------------bottom-footer------------------ */
+
+
+/* -------------------------------------------media-query--------------------------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        width: 330px;
+        height: 474px;
+    }
+    .player .img-thumbnail img {
+        width: 100%;
+        height: 256px;
+    }
+    .half-width {
+        width: 800px;
+        display: flex;
+    }
+    .banner-img img {
+        width: 100%;
+        overflow: hidden
+    }
+    .text-info .textOne {
+        font-size: 40px;
+        color: white;
+        transition: font-size 2s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .text-info .textOne:hover {
+        font-size: 50px;
+    }
+    /* .container {
+        width: 100%;
+    } */
 }
